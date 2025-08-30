@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SatviDiaries ❤️</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cinzel', serif;
+      background: #111;
+      color: white;
+      overflow-x: hidden
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    #welcome {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      text-align: center;
+    }
+    #welcome h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: pink;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1);}
+      50% { transform: scale(1.1);}
+      100% { transform: scale(1);}
+    }
+    #passwordInput {
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      text-align: center; 
+    }
+    .heart {
+      position: fixed;
+      color: pink;
+      font-size: 24px;
+      animation: float 5s linear forwards;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    @keyframes float {
+      from { transform: translateY(0) scale(1); opacity: 1;}
+      to { transform: translateY(-600px) scale(1.5); opacity: 0;}
+    }
+    #story {
+      padding-top: 60px;
+      text-align: center;
+    }
+    #story h1 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #ffb6c1;
+    }
+    .story-section {
+      margin: 80px 0;
+    }
+    .story-section img {
+      max-width: 80%;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    .story-section.show img {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .story-section p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: auto;
+      color: #ffe4e1;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease 0.3s;
+    }
+    .story-section.show p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome My Love 💖</h1>
+        <input type="password" id="passwordInput" placeholder="Enter password & press Enter">
+      </div>
+      <div id="story" style="display:none;">
+        <h1>You and me belong together</h1>
+        <div class="story-section"><img src="images/IMG_0608.JPG"><p>I tried a little❤️</p></div>
+    <div class="story-section"><img src="images/IMG_0611.JPG"><p>I hope to see you smile💫</p></div>
+    <div class="story-section"><img src="images/IMG_0612.JPG"><p>My aloo🌸</p></div>
+    <div class="story-section"><img src="images/IMG_0924.JPG"><p>Sorry my cutu✨</p></div>
+    <div class="story-section"><img src="images/IMG_0925.jpg"><p>You're not aloo💕</p></div>
+    <div class="story-section"><img src="images/IMG_0926.JPG"><p>You're my love🌹</p></div>
+    <div class="story-section"><img src="images/IMG_0927.JPG"><p>My sweetest desert 💖</p></div>
+    <div class="story-section"><img src="images/IMG_1022.PNG"><p>You're rhe only reason🎉</p></div>
+    <div class="story-section"><img src="images/IMG_1025.PNG"><p>I believe in love again✨</p></div>
+    <div class="story-section"><img src="images/IMG_1026.PNG"><p>Love youuu soo soo much🌈</p></div>
+    <div class="story-section"><img src="images/IMG_1586.JPG"><p>BTW aloo💞</p></div>
+    <div class="story-section"><img src="images/IMG_1587.JPG"><p>Please give me a rating💫</p></div>
+    <div class="story-section"><img src="images/IMG_1588.JPG"><p>On wtsp obviously🌸</p></div>
+    <div class="story-section"><img src="images/IMG_1589.JPG"><p>Do you like it or not🌹</p></div>
+    <div class="story-section"><img src="images/IMG_2024.HEIC"><p>I hope this💖</p></div>
+    <div class="story-section"><img src="images/IMG_5489.JPG"><p>Turn out✨</p></div>
+    <div class="story-section"><img src="images/IMG_5490.JPG"><p>Good 🎶</p></div>
+    <div class="story-section"><img src="images/IMG_6273.JPG"><p>But obviously🌙</p></div>
+    <div class="story-section"><img src="images/IMG_6277.JPG"><p>I will try again🌸</p></div>
+    <div class="story-section"><img src="images/IMG_7347.JPG"><p>Love💕</p></div>
+    <div class="story-section"><img src="images/IMG_7374.jpg"><p>You</p></div>
+    <div class="story-section"><img src="images/IMG_7414.JPG"><p>With🌹</p></div>
+    <div class="story-section"><img src="images/IMG_7451.JPG"><p>All💖</p></div>
+    <div class="story-section"><img src="images/IMG_7658.JPG"><p>MY🌈</p></div>
+    <div class="story-section"><img src="images/IMG_7663.JPG"><p>Heart💫</p></div>
+  </div>
+ <script>
+    const correctPassword = "Satvi";
+    const welcome = document.getElementById("welcome");
+    const passwordInput = document.getElementById("passwordInput");
+    const story = document.getElementById("story");
+    passwordInput.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        if (passwordInput.value === correctPassword) {
+          welcome.style.display = "none";
+          story.style.display = "block";
+          createHearts(15);
+}
+else{
+alert("Wrong Password!");
+}
+}
+});
+function createHearts(count=1) {
+      for (let i=0; i<count; i++) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.bottom = "0px";
+        heart.textContent = "💖";
+        document.body.appendChild(heart);
+        setTimeout(()=>{ heart.remove(); },5000);
+      }
+    }
+    window.addEventListener("scroll", () => {
+      if (Math.random() > 0.8) createHearts();
+    });
+    const sections = document.querySelectorAll(".story-section");
+    window.addEventListener("scroll", () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
